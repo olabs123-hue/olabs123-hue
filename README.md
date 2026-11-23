@@ -30,7 +30,7 @@ A fictional financial-ledger prototype investigating safe concurrent transfers, 
 ### [InfraPulse — Full-Stack Infrastructure Monitoring](https://github.com/olabs123-hue/Infrapulse)
 **React · TypeScript · FastAPI · SQLite · Docker**
 
-A standalone observability lab with health samples, latency charts, token-protected metric ingestion, threshold-based incident detection, and a read-only dashboard. Local backend tests pass; the public deployment and frontend build are pending verification.
+A standalone observability lab with health samples, latency charts, token-protected metric ingestion, threshold-based incident detection, and a read-only dashboard. The [read-only dashboard is live on Render](https://infrapulse-readonly-olabs123.onrender.com); the frontend and Docker production builds passed during deployment. Public metric ingestion is disabled.
 
 ### [SentinelAI — Explainable Security Monitoring](https://github.com/olabs123-hue/SentinelAI)
 **Python · FastAPI · SQLite · Browser dashboard**
