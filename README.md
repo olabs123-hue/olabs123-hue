@@ -35,7 +35,7 @@ A standalone observability lab with health samples, latency charts, token-protec
 ### [MarketStream — Real-Time Market Data Simulation](https://github.com/olabs123-hue/-MarketStream)
 **React · TypeScript · FastAPI · WebSockets · C++17**
 
-A simulation-only trading-terminal dashboard featuring streaming fictional prices, synthetic order-book depth, reconnecting WebSocket clients, and a standalone C++ order-book reference implementation. Backend and C++ tests pass; frontend CI verification and public deployment remain pending.
+A [live simulated trading terminal](https://marketstream-sim-olabs123.onrender.com) featuring fictional WebSocket prices, synthetic order-book depth, C++17 top-of-book validation, and bounded SQLite observation history. Its React and Docker production builds passed on Render; backend and native integration tests passed locally.
 
 ### [SentinelAI — Explainable Security Monitoring](https://github.com/olabs123-hue/SentinelAI)
 **Python · FastAPI · SQLite · Browser dashboard**
