@@ -32,6 +32,11 @@ A fictional financial-ledger prototype investigating safe concurrent transfers, 
 
 A standalone observability lab with health samples, latency charts, token-protected metric ingestion, threshold-based incident detection, and a read-only dashboard. The [read-only dashboard is live on Render](https://infrapulse-readonly-olabs123.onrender.com); the frontend and Docker production builds passed during deployment. Public metric ingestion is disabled.
 
+### [MarketStream — Real-Time Market Data Simulation](https://github.com/olabs123-hue/-MarketStream)
+**React · TypeScript · FastAPI · WebSockets · C++17**
+
+A simulation-only trading-terminal dashboard featuring streaming fictional prices, synthetic order-book depth, reconnecting WebSocket clients, and a standalone C++ order-book reference implementation. Backend and C++ tests pass; frontend CI verification and public deployment remain pending.
+
 ### [SentinelAI — Explainable Security Monitoring](https://github.com/olabs123-hue/SentinelAI)
 **Python · FastAPI · SQLite · Browser dashboard**
 
