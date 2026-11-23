@@ -32,10 +32,10 @@ A fictional financial-ledger prototype investigating safe concurrent transfers, 
 
 A standalone observability lab with health samples, latency charts, token-protected metric ingestion, threshold-based incident detection, and a read-only dashboard. The [read-only dashboard is live on Render](https://infrapulse-readonly-olabs123.onrender.com); the frontend and Docker production builds passed during deployment. Public metric ingestion is disabled.
 
-### [MarketStream — Real-Time Market Data Simulation](https://github.com/olabs123-hue/-MarketStream)
+### [MarketStream — Real-Time Market Data Simulation](https://github.com/olabs123-hue/MarketStream)
 **React · TypeScript · FastAPI · WebSockets · C++17**
 
-A [live simulated trading terminal](https://marketstream-sim-olabs123.onrender.com) featuring fictional WebSocket prices, synthetic order-book depth, C++17 top-of-book validation, and bounded SQLite observation history. Its React and Docker production builds passed on Render; backend and native integration tests passed locally.
+A [live simulated trading terminal](https://marketstream-sim-olabs123.onrender.com) featuring fictional WebSocket prices, synthetic order-book depth, stateful C++17 order-book processing, sequence validation, normalized simulated sources, and bounded SQLite observation history. Backend/native tests and Docker builds run in CI.
 
 ### [SentinelAI — Explainable Security Monitoring](https://github.com/olabs123-hue/SentinelAI)
 **Python · FastAPI · SQLite · Browser dashboard**
