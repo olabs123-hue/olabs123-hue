@@ -27,6 +27,11 @@ A fictional financial-ledger prototype investigating safe concurrent transfers, 
 - A separate read-only API staging service exposes health/readiness endpoints.
 - The interactive transfer experience is tested in isolated HTTPS CI; public transactions are **not enabled**.
 
+### [InfraPulse — Full-Stack Infrastructure Monitoring](https://github.com/olabs123-hue/Infrapulse)
+**React · TypeScript · FastAPI · SQLite · Docker**
+
+A standalone observability lab with health samples, latency charts, token-protected metric ingestion, threshold-based incident detection, and a read-only dashboard. Local backend tests pass; the public deployment and frontend build are pending verification.
+
 ### [SentinelAI — Explainable Security Monitoring](https://github.com/olabs123-hue/SentinelAI)
 **Python · FastAPI · SQLite · Browser dashboard**
 
