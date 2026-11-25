@@ -37,6 +37,9 @@ A standalone observability lab with health samples, latency charts, token-protec
 
 A [live simulated trading terminal](https://marketstream-sim-olabs123.onrender.com) featuring fictional WebSocket prices, synthetic order-book depth, stateful C++17 order-book processing, sequence validation, normalized simulated sources, and bounded SQLite observation history. Backend/native tests and Docker builds run in CI.
 
+- **Measured internal performance:** [138,388.83 in-process Python fanout enqueue calls/s](https://github.com/olabs123-hue/MarketStream/actions/runs/45190849808) at p95 **7.493 µs** (20 bounded subscriber queues; not network/WebSocket delivery latency).
+- **Synthetic source-recovery test:** [200/200 successful simulated failover selections](https://github.com/olabs123-hue/MarketStream/actions/runs/45196355759), p95 **2.964 µs** for local synchronous selection (not external source recovery time).
+
 ### [SentinelAI — Explainable Security Monitoring](https://github.com/olabs123-hue/SentinelAI)
 **Python · FastAPI · SQLite · Browser dashboard**
 
@@ -46,6 +49,10 @@ A defensive security monitoring MVP with event ingestion, rule-based incident de
 **C++17 · Kafka · PostgreSQL · Docker**
 
 Message-driven event processing with Kafka consumers, idempotent persistence, observability, and failure-recovery testing. The repository distinguishes serialization benchmarks from end-to-end ingestion performance.
+
+- **Measured batch scaling:** [5,000 synthetic events per configuration](https://github.com/olabs123-hue/distributed-event-processing/actions/runs/45601157117); **1,025 → 1,575 persisted events/s** from **1 to 3 active database-writing workers** (~**54% improvement**) in one GitHub Actions run (4 consumers configured, 3 partitions).
+- **Measured event age at PostgreSQL insert (3 active writers):** **896 ms p50 / 1,438 ms p99**. Synthetic container benchmark; not client acknowledgment latency or production throughput.
+- **Recovery evidence:** [10,000 unique IDs + 2,500 replayed IDs](https://github.com/olabs123-hue/distributed-event-processing/actions/runs/44302567380), with no missing or duplicate persisted rows after worker/database disruptions.
 
 ### [AtlasKV — Transactional Key-Value Store](https://github.com/olabs123-hue/AtlasKV-Transactional-Database)
 **C++17 · MVCC · Transactions · Indexing**
