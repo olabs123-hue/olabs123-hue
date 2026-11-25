@@ -65,6 +65,12 @@ An educational transactional storage engine with historical reads, optimistic va
 
 A network reliability lab exploring dynamic routing, fault injection, observability, and automated recovery validation.
 
+### [DSA Grind — Algorithm Practice](https://github.com/olabs123-hue/dsa-grind)
+**Python · Data Structures · Algorithms**
+
+- **27 publicly inspectable Python solution files** verified from the GitHub repository tree on 25 November 2026, covering hashing, arrays, two pointers, sliding windows, trees, graphs and dynamic programming.
+- [Browse the solutions](https://github.com/olabs123-hue/dsa-grind/tree/main/python) · [Evidence and contest tracker](https://github.com/olabs123-hue/dsa-grind/blob/main/PROGRESS.md). Source-file count is **not** an accepted-online-judge submission count; no contest rating is claimed.
+
 ## 🔭 Current focus
 
 - Building polished, accessible frontend experiences that connect to secure backend APIs
