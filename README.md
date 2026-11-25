@@ -26,6 +26,7 @@ A fictional financial-ledger prototype investigating safe concurrent transfers, 
 - [Public React showcase](https://ledgerflow-showcase-olabs123.onrender.com) uses **browser-local demo data**, not a live transactional backend.
 - A separate read-only API staging service exposes health/readiness endpoints.
 - The interactive transfer experience is tested in isolated HTTPS CI; public transactions are **not enabled**.
+- **Measured fictional-transfer benchmark:** [82.29 transfers/s with 4 workers](https://github.com/olabs123-hue/LedgerFlow./blob/main/PHASE3_REPORT.md), **68.17 ms p95** on 100 persisted transfers in a single runner-local FastAPI TestClient + PostgreSQL CI comparison; not public-service load testing.
 
 ### [InfraPulse — Full-Stack Infrastructure Monitoring](https://github.com/olabs123-hue/Infrapulse)
 **React · TypeScript · FastAPI · SQLite · Docker**
